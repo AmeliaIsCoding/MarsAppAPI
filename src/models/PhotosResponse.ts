@@ -1,6 +1,6 @@
 import { Camera } from "./Camera"
 
-export type PhotosResponse = {
+export interface PhotosResponse {
     photos: {
         id: number,
         sol: number,

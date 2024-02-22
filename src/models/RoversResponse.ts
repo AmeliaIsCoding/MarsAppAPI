@@ -1,7 +1,7 @@
 import { Camera } from "./Camera"
 import { Rover } from "./Rover"
 
-export type RoversResponse = {
+export interface RoversResponse {
     rovers: {
         id: number,
         name: Rover,

@@ -2,9 +2,11 @@ import express from "express";
 import getRovers from "./routes/rovers";
 import getPhotos from "./routes/photos";
 import capitalise from "./helpers/capitalise";
+var cors = require('cors');
  
 const app = express();
 const port = 8000;
+app.use(cors());
  
 app.use(express.json());
 const router = express.Router();
